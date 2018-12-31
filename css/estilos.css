@@ -1,6 +1,21 @@
-body{
-    background: red;
-}
+/*
+Reglas: Conformadas de selectores, declaraciones propiedades y valores
+Selectores: Formados acerca del como indentificamos un elemento HTML
+Declaraciones: La forma en que ocupamos el selector
+Propiedades: Particularidades de los elementos
+Valores: Esperan recibir a manera de variables
+*/
+
+/*Selector de etiqueta: como por ejemplo header- section- article- nav*/
 header{
-    background: rgb(167, 112, 121) !important;
+    background: rgb(167, 112, 121) /*!important         Solo usar important en casos muy particulares*/;
+    color:red
 }
+/*Selector descendente, elemento hijo de algún otro elemento*/
+/*body header div nav ol li a*/
+
+/*Selector de id o selector de clase: */
+/*.link*/
+
+/*Selector de id:*/
+/*#portafolio*/
