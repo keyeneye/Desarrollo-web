@@ -37,3 +37,13 @@ h1{
     text-transform: capitalize;
     /*text-decoration: dashed;*/
 }
+.project-details{
+    width: 500px;
+    height: 0px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+.hero{
+    height: 300px;
+}
