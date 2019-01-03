@@ -15,7 +15,7 @@ Valores: Esperan recibir a manera de variables
 /*Selector descendente, elemento hijo de algún otro elemento*/
 /*body header div nav ol li a*/
 
-/*Selector de id o selector de clase: */
+/*Selector de clase: */
 /*.link*/
 
 /*Selector de id:*/
@@ -186,6 +186,7 @@ figure{
     background-color: #1b2127;
     align-items: center;
     justify-content: space-between;
+
 }
 .footer img{
     vertical-align: middle;
@@ -216,7 +217,7 @@ figure{
     margin: 20px 40px;
     background: white;
     margin-top: -40px;
-    position: relative;
+    /* position: relative; */
     padding: 20px;
     text-align: center;
 }
