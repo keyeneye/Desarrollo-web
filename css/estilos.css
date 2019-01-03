@@ -36,7 +36,8 @@ h1{
     line-height: 1.5;
     letter-spacing: -.2px;
     color:white;
-    margin: 100px 150px 70px 30px;
+    margin: 0;
+    /* margin: 100px 150px 70px 30px; */
     /*text-transform: capitalize;*/
     /*text-decoration: dashed;*/
 }
@@ -78,15 +79,16 @@ h1 strong{
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
-
+    display: flex;
+    align-items: center;
 }
 .header{
     background-color: #1b2127;
     color: white;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    height: 90px;
+    align-items: center;
+    height: 70px;
 }
 .menu{
     height: inherit;
@@ -140,4 +142,19 @@ figure{
     /* margin: 20px; */
     border: 1px solid red;
     flex-shrink: 0;
+}
+
+.footer{
+    color:white;
+    display: flex;
+    background-color: #1b2127;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color:white;
+    /* text-decoration: none; */
 }
