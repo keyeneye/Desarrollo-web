@@ -297,3 +297,19 @@ figure{
     height: inherit;
     flex-wrap: inherit;
 }
+/* Para Desktop first empezar desde el MQ más grande*/
+@media screnn and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        border:10px solid green;
+    }
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
+}
