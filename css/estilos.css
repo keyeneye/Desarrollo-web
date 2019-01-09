@@ -62,19 +62,20 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.61);
     -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.61);
     box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.61);
 }
 .project-title{
     font-size: 30px;
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 .project-courser,
 .project-date,
 .project-url{
-    margin:10px 0;
+    margin: 10px 0;
 }
 .project-description{
     font-size: 20px;
@@ -96,11 +97,16 @@ h2{
     margin-bottom: 40px;
 }
 .project-details{
-    width: 500px;
+    width: 50%;
     /*height: 0px;*/
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+
+}
+.project-imageContainer img{
+    max-width: 100%;
+    /* max-height: 100%; */
 }
 .hero{
     height: 300px;
@@ -113,6 +119,7 @@ h2{
     align-items: center;
     text-transform: capitalize;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image{
@@ -125,6 +132,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    flex-wrap: wrap;
 }
 .menu{
     height: inherit;
@@ -186,6 +194,7 @@ figure{
     background-color: #1b2127;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .footer img{
@@ -197,8 +206,8 @@ figure{
 }
 
 .event{
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -217,7 +226,7 @@ figure{
     margin: 20px 40px;
     background: white;
     margin-top: -40px;
-    /* position: relative; */
+    position: relative;
     padding: 20px;
     text-align: center;
 }
@@ -242,6 +251,7 @@ figure{
     height: 150px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -289,7 +299,9 @@ figure{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -299,15 +311,94 @@ figure{
 }
 /* Para Desktop first empezar desde el MQ más grande*/
 @media screnn and (max-width: 1024px){
-
+    .container{
+        padding: 0 1em;
+    }
 }
 
-@media screen and (max-width: 768px){
-    body{
-        border:10px solid green;
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display:block;
+    }
+    .header ol li{
+        height: 50px;
+        flex-direction: column;
+    }
+    .header a{
+        display: inline;
+    }
+    .project{
+        display: block;
+        /* line-height: 1.0; */
+    }
+    .project-imageContainer{
+        widows: auto;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .project-details{
+        width: auto; 
+    }
+    .projet-courser, .project-date, .project-url{
+        margin: .4em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .projet-courser{
+        font-size: .7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: 0.8em;
+    }
+    .event{
+        width: auto; 
+        flex-shrink: initial;
+    }
+    .event img{
+        object-fit: cover;
+        width: 100%;
+        object-position: 10% 20%;
     }
 }
 @media screen and (max-width: 480px){
+    .project-details{
+        font-size: 12px; 
+    }
+    .event-detail{
+        margin: -2em .5em 5em;
+        padding: 1em;
+    }
+    .contact{
+        padding: 1em 0;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .form-email button{
+        margin: 1.5em auto;
+        /* margin-top: 0; */
+    }
+    .form-email h3{
+        margin-top: 0;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
 
 }
 @media screen and (max-width: 320px){
