@@ -302,10 +302,13 @@ figure{
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 40px;
     color: white;
-    margin: 0 10px;
+    margin: 0px 10px;
+    padding: 2% 2% 0% 2%; 
+    border: 2px solid white;
+    border-radius: 1000px;
 }
 .social-link.twitter{
     background-image: url('../images/twitter.svg');
