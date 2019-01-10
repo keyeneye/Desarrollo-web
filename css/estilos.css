@@ -482,7 +482,7 @@ Valores: Esperan recibir a manera de variables
   
     .menu {
       position: fixed;
-      background: rgba(5, 111, 255, .9);
+      background: rgba(5, 111, 255, .6);
       z-index: 3;
       top: 0;
       left: -100vw;
