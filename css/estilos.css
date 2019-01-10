@@ -133,7 +133,10 @@ Valores: Esperan recibir a manera de variables
     /* border-top-color: red;
     border-top-width: 15px;
     border-top-style: solid; */
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     /* border-top-left-radius: 50px;
     border-top-right-radius: 10px;
