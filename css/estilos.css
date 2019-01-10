@@ -197,9 +197,7 @@ h2{
     align-items: center;
     padding: 0 10px;
 }
-.header .logo {
-    text-align: center;
-  }
+
 ol,ul{
     margin: 0;
     padding: 0;
@@ -450,7 +448,30 @@ figure{
         flex-direction: column;
     }
     .header a{
-        display: inline;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .menu{
+        position: fixed;
+        background-color:rgba(5, 111, 255, .6);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+    .menu.is-active{
+        left: 0;
     }
     .project{
         display: block;
